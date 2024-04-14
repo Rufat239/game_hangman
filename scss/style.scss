@@ -1,0 +1,405 @@
+body {
+  // background-image: url("https://t3.ftcdn.net/jpg/02/22/52/86/360_F_222528659_5fu6TLRIFGGXVZ3zG2JfVsVUKeNVe0dZ.jpg");
+  background-color: aqua;
+  width: 100%;
+  // height: 95px;
+  margin: 0;
+
+  .firstSection {
+    h1 {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 80px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      color: chocolate;
+    }
+
+    .playGame {
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      .btnPlayGame {
+        width: 120px;
+        height: 120px;
+        border: 4px solid blue;
+        border-radius: 50%;
+        font-size: 80px;
+
+        i {
+          color: green;
+        }
+      }
+    }
+  }
+
+  .mainSection {
+    width: 100%;
+    display: none;
+
+    .twoSections {
+      display: flex;
+      .leftSection {
+        width: 50%;
+
+        .imgPoint {
+          display: flex;
+          justify-content: end;
+
+          .icon {
+            font-size: 50px;
+            color: yellow;
+            margin-right: 15px;
+          }
+          .points {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: blue;
+          }
+        }
+
+        .rightWord {
+          width: 100%;
+          height: 4vh;
+          margin-top: 230px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .text {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            color: rgb(238, 13, 182);
+          }
+        }
+
+        .buttons {
+          margin-top: 100px;
+          .btns1 {
+            display: flex;
+            justify-content: center;
+
+            .btn {
+              width: 60px;
+              height: 40px;
+              margin: 10px;
+              background-color: greenyellow;
+              border: 0;
+              border-radius: 10px;
+              font-size: 20px;
+              font-weight: 600;
+              color: red;
+            }
+          }
+        }
+
+        .wellDone {
+          display: none;
+          width: 100%;
+          height: 36vh;
+          background-color: green;
+          border: 3px solid black;
+          border-radius: 15px;
+          margin-top: 60px;
+          // padding-top: 30px;
+
+          .hrWellDone {
+            width: 90%;
+            height: 5px;
+            background-color: black;
+            margin-top: 15px;
+          }
+
+          h2 {
+            margin: 15px;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+          }
+
+          .imgPoint1 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            .icon1 {
+              font-size: 50px;
+              color: yellow;
+              margin-right: 15px;
+            }
+            .points1 {
+              font-size: 50px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: 400;
+              color: blue;
+            }
+          }
+
+          .btnStep {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 18px;
+            .nextStep {
+              width: 70px;
+              height: 70px;
+              border: 4px solid blue;
+              border-radius: 50%;
+
+              i {
+                font-size: 30px;
+                color: chocolate;
+              }
+            }
+          }
+        }
+
+        .gameOver {
+          display: none;
+          width: 100%;
+          height: 36vh;
+          background-color: red;
+          border: 3px solid black;
+          border-radius: 15px;
+          margin-top: 60px;
+
+          .hrGameOver {
+            width: 90%;
+            height: 5px;
+            background-color: black;
+            margin-top: 15px;
+          }
+
+          h2 {
+            margin: 15px;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+          }
+
+          .imgPoint2 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            .icon2 {
+              font-size: 50px;
+              color: yellow;
+              margin-right: 15px;
+            }
+            .points2 {
+              font-size: 50px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: 400;
+              color: blue;
+            }
+          }
+
+          .gameOverBtns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 18px;
+            .homeBtn {
+              width: 70px;
+              height: 70px;
+              border: 3px solid green;
+              border-radius: 50%;
+              margin-right: 40px;
+
+              i {
+                font-size: 30px;
+                color: chocolate;
+              }
+            }
+
+            .syncBtn {
+              width: 70px;
+              height: 70px;
+              border: 3px solid blue;
+              border-radius: 50%;
+
+              i {
+                font-size: 30px;
+                color: chocolate;
+              }
+            }
+          }
+        }
+      }
+
+      .tortureTree {
+        // padding-top: 200px;
+        position: relative;
+        padding-left: 10px;
+
+        .retryNumber {
+          margin-bottom: 140px;
+          display: flex;
+          justify-content: end;
+
+          .imgRetry {
+            color: red;
+            font-size: 50px;
+            margin-right: 15px;
+          }
+
+          .countRetry {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: green;
+          }
+        }
+
+        .topLine {
+          width: 13rem;
+          height: 10px;
+          background-color: black;
+          margin-left: 45px;
+        }
+        .rope {
+          position: absolute;
+          width: 10px;
+          height: 60px;
+          background-color: black;
+          top: 200px;
+          left: 230px;
+          display: none;
+        }
+
+        .head {
+          width: 70px;
+          height: 70px;
+          border: 4px solid black;
+          border-radius: 50%;
+          position: absolute;
+          top: 260px;
+          left: 196px;
+          display: none;
+          background-color: black;
+        }
+
+        .body {
+          width: 6px;
+          height: 150px;
+          background-color: black;
+          position: absolute;
+          top: 335px;
+          left: 230px;
+          display: none;
+        }
+
+        .arm1 {
+          width: 6px;
+          height: 70px;
+          background-color: black;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 350px;
+          left: 205px;
+          display: none;
+        }
+
+        .arm2 {
+          width: 6px;
+          height: 70px;
+          background-color: black;
+          transform: rotate(-45deg);
+          position: absolute;
+          top: 350px;
+          left: 255px;
+          display: none;
+        }
+
+        .foot1 {
+          width: 6px;
+          height: 70px;
+          background-color: black;
+          transform: rotate(45deg);
+          position: absolute;
+          top: 470px;
+          left: 205px;
+          display: none;
+        }
+
+        .foot2 {
+          width: 6px;
+          height: 70px;
+          background-color: black;
+          transform: rotate(-45deg);
+          position: absolute;
+          top: 470px;
+          left: 255px;
+          display: none;
+        }
+
+        .happyMan {
+          width: 200px;
+          height: 220px;
+          position: absolute;
+          top: 355px;
+          left: 135px;
+          display: none;
+          background-color: aqua;
+        }
+
+        .cryMan {
+          width: 200px;
+          height: 220px;
+          position: absolute;
+          top: 355px;
+          left: 135px;
+          display: none;
+        }
+
+        .mediumLine {
+          width: 10px;
+          height: 50vh;
+          background-color: black;
+          margin-left: 45px;
+        }
+
+        .bottomLine {
+          width: 25rem;
+          height: 10px;
+          background-color: black;
+        }
+      }
+    }
+  }
+
+  .lastSection {
+    padding-top: 200px;
+    // width: 100%;
+    height: 529px;
+    // padding: 50px;
+    background-color: red;
+    display: none;
+
+    .lastGameOver {
+      text-align: center;
+      font-size: 100px;
+      color: white;
+      margin: 0;
+      margin-bottom: 80px;
+    }
+
+    .btnLastSection {
+      display: flex;
+      justify-content: center;
+
+      .btnLast {
+        width: 150px;
+        height: 150px;
+        border: 3px solid black;
+        border-radius: 50%;
+
+        i {
+          font-size: 80px;
+          color: chocolate;
+        }
+      }
+    }
+  }
+}
